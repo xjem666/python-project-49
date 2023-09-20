@@ -2,6 +2,14 @@ import random
 
 import prompt
 
+def main():
+    print("Welcome to the brain games!")
+    print('May i have your name? ', end='')
+    name = input()
+    print("Hello", name)
+
+
+main()
 
 def is_even(num):
     return num % 2 == 0
@@ -27,4 +35,5 @@ def game():
 
 
 game()
+print("Congratulations")
 
