@@ -3,14 +3,16 @@ import random
 
 import prompt
 
-def main():
-    print("Welcome to the brain games!")
-    print('May i have your name? ', end='')
-    name = input()
-    print("Hello", name)
 
+def main():
+    game()
+
+
+if __name__ == '__main__':
+    main()
 
 main()
+
 
 def is_even(num):
     return num % 2 == 0
@@ -18,7 +20,6 @@ def is_even(num):
 
 def is_even_str(num):
     return "yes" if num % 2 == 0 else "no"
-
 
 
 def game():
@@ -32,7 +33,6 @@ def game():
             print("Correct!")
         else:
             print(f"{correct_answer} is wrong answer ;(. Correct answer was {user_answer}")
-
 
 
 game()
