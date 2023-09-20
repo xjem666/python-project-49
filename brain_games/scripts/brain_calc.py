@@ -7,7 +7,6 @@ s_number = random.randint(0, 80)
 operation = ['+', '-', '*']
 
 
-def cult():
 
 
 
