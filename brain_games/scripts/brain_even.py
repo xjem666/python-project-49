@@ -5,13 +5,10 @@ import prompt
 
 
 def main():
-    game()
-
-
-if __name__ == '__main__':
-    main()
-
-main()
+    print("Welcome to the brain games!")
+    print('May i have your name? ', end='')
+    name = input()
+    print("Hello", name)
 
 
 def is_even(num):
@@ -35,5 +32,8 @@ def game():
             print(f"{correct_answer} is wrong answer ;(. Correct answer was {user_answer}")
 
 
+main()
 game()
-print("Congratulations")
+
+print(f"Congratulations!")
+exit()
