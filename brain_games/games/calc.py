@@ -23,11 +23,10 @@ def run_calc():
         math_sign, result = get_math_sign_and_result(first_number, second_number)
         print(f'Question {first_number} {math_sign} {second_number}')
         user_answer = prompt.string(f'Your answer:')
-        correct_answer = get_math_sign_and_result(first_number, second_number)
-        if user_answer == correct_answer:
+        if user_answer == str(result):
             print("Correct")
         else:
-            print('No')
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{result}'. \n Let's try again!")
             return
 
 
