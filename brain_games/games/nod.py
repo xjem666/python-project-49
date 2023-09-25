@@ -3,7 +3,7 @@ import prompt
 from brain_games.utils import get_random_number
 
 
-def run_gcd():
+def run_nod():
     for _ in range(3):
         first_number, second_number = get_random_number(), get_random_number()
         correct_answer = math.gcd(first_number, second_number)
@@ -16,4 +16,4 @@ def run_gcd():
             return
 
 
-run_gcd()
+run_nod()
