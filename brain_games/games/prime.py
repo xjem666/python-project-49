@@ -16,7 +16,7 @@ def run_prime_game():
     for _ in range(3):
         number = get_random_number()
 
-        user_answer = prompt.string(f"Question {number} - > ")
+        user_answer = prompt.string(f"Question: {number} - > ")
 
         if is_prime(number) and user_answer == "yes":
             print("Correct!")
