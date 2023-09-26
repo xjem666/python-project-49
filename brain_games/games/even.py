@@ -17,5 +17,7 @@ def run_even_game():
         if user_answer == correct_answer:
             print("Correct!")
         else:
-            print(f"{correct_answer} is wrong answer ;(. Correct answer was {user_answer}")
+            print(f"{user_answer} is wrong answer ;(. Correct answer was {correct_answer}")
             return
+
+run_even_game()
