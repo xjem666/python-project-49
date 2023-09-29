@@ -1,19 +1,19 @@
+#!/usr/bin/env python3
 import math
-import prompt
 from brain_games.utils import get_random_number
+from brain_games.engine import run_game
+
+
+def get_nod(num1, num2):
+    return math.gcd(num1, num2)
+
+
+def brain_nod():
+    num1, num2 = get_random_number(), get_random_number()
+    question = f'{num1} {num2}'
+    result = str(get_nod(num1, num2))
+    return question, result
 
 
 def run_nod():
-    for _ in range(3):
-        first_number, second_number = get_random_number(), get_random_number()
-        correct_answer = math.gcd(first_number, second_number)
-        print(f"Question: {first_number}, {second_number}")
-        user_answer = prompt.string(f'Your answer - >')
-        if user_answer == str(correct_answer):
-            print("Correct")
-        else:
-            print(f'{user_answer} is wrong answer ;(. Correct answer was - > {correct_answer}')
-            return
-
-
-run_nod()
+    run_game(brain_nod, 'Find the greatest common divisor of given numbers.')

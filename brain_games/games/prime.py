@@ -1,4 +1,4 @@
-import prompt
+from brain_games.engine import run_game
 from brain_games.utils import get_random_number
 
 
@@ -11,20 +11,11 @@ def is_prime(number):
     return True
 
 
-def run_prime_game():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    for _ in range(3):
-        number = get_random_number()
-
-        user_answer = prompt.string(f"Question: {number} - > ")
-
-        if is_prime(number) and user_answer == "yes":
-            print("Correct!")
-        elif not is_prime(number) and user_answer == "no":
-            print("Correct!")
-        else:
-            print(f"{number} is wrong answer ;(. {number} is prime." if is_prime(number) else f"{number} not prime.")
-            return
+def brain_prime():
+    problem_num = get_random_number()
+    answer = 'yes' if is_prime(problem_num) else 'no'
+    return problem_num, answer
 
 
-run_prime_game()
+def run_brain_prime():
+    run_game(brain_prime, 'Answer "yes" if the number is prime, otherwise answer "no".')

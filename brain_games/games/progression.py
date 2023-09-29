@@ -33,6 +33,3 @@ def run_progression_game():
             print("Correct!")
         else:
             print(f"{guess} is wrong answer ;(. Correct answer was {hidden_value}")
-
-
-run_progression_game()
