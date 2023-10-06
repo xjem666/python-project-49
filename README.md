@@ -38,7 +38,7 @@
 
 ### Демонстрация возможностей игр
     brain-games
-[![asciicast](https://asciinema.org/a/M71nud4khuQFc8LdrxX5c1yJY)]
+[![asciicast](https://asciinema.org/a/M71nud4khuQFc8LdrxX5c1yJY)](https://asciinema.org/a/M71nud4khuQFc8LdrxX5c1yJY)
 
     brain-even 
 https://asciinema.org/a/8lnzAaIbsnfeU91yDCF3WBWfv
