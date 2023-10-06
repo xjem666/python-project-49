@@ -1,35 +1,21 @@
-import random
+from random import randint
+
+from brain_games.const import PROGRESSION_LENGTH
+from brain_games.engine import run_game
+from brain_games.utils import get_random_number
+from brain_games.const import PROGRESSION_INSTRUCTION
 
 
-# Создание прогресси
-def generate_progression(length):
-    start = random.randint(1, 10)
-    diff = random.randint(1, 10)
-    end = start + (length - 1) * diff
-    progression = list(range(start, end + 1, diff))
-    return progression
+def brain_progression():
+    first_num, diff = get_random_number(), get_random_number()
+    missed_num_ind = randint(0, PROGRESSION_LENGTH - 1)
+    pg = ' '.join(['..' if i == missed_num_ind else str(first_num + i * diff)
+                   for i in range(PROGRESSION_LENGTH)
+                   ])
+    result = str(first_num + missed_num_ind * diff)
+    question = pg
+    return question, result
 
 
-# Прячу число
-def hide_element(progression):
-    hidden_index = random.randint(0, len(progression) - 1)
-    hidden_value = progression[hidden_index]
-    progression[hidden_index] = ".."
-    return progression, hidden_value
-
-
-# Игра
-def run_progression_game():
-    print("What number is missing in the progression?")
-    for _ in range(3):
-        length = 10
-        progression = generate_progression(length)
-        progression_with_hidden, hidden_value = hide_element(progression)
-        print(" ".join(str(num) for num in progression_with_hidden))
-
-        guess = int(input("Your answer: "))
-
-        if guess == hidden_value:
-            print("Correct!")
-        else:
-            print(f"{guess} is wrong answer ;(. Correct answer was {hidden_value}")
+def run_brain_progression():
+    run_game(brain_progression, PROGRESSION_INSTRUCTION)

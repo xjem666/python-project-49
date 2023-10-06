@@ -23,12 +23,11 @@
 
 [Poetry](https://python-poetry.org/docs/)
 
-
 ### Команды для вызова игр
 
     brain-even # Чётное / Нечётное
     brain-calc # Вычисления 
-    brain-gcd # Нахождение наибольшего общего делителя
+    brain-nod # Нахождение наибольшего общего делителя
     brain-progression # Заполнение прогрессии
     brain-prime # Простое число или нет
 
@@ -37,15 +36,21 @@
 
 В случае предоставления **неверного** ответа, игра **завершается**.
 
-### Демонастрация возможностей игр
+### Демонстрация возможностей игр
+    brain-games
+https://asciinema.org/a/M71nud4khuQFc8LdrxX5c1yJY
 
     brain-even 
-#asciinema
+https://asciinema.org/a/8lnzAaIbsnfeU91yDCF3WBWfv
+
     brain-calc
-#asciinema
-    brain-gcd
-#asciinema
+https://asciinema.org/a/i1C1ajWI78Vb2FW8TyR8zrAMW
+
+    brain-nod
+https://asciinema.org/a/i346rO88Lq8wHNWXx3vwUnpNw
+
     brain-progression
-#asciinema
+https://asciinema.org/a/cYLaQJcnbinS75JTxxho7y1KX
+
     brain-prime
-#asciinema
+https://asciinema.org/a/iYPJF3apdClCk47IWFjwPGUpp

@@ -1,5 +1,6 @@
 from brain_games.engine import run_game
 from brain_games.utils import get_random_number
+from brain_games.const import EVEN_INSTUCTION
 
 
 def is_even(num):
@@ -12,6 +13,5 @@ def brain_even():
     return problem_num, answer
 
 
-def run_brain_even():
-    run_game(brain_even, 'Answer "yes" if the number is even, '
-                         'otherwise answer "no".')
+def run_brain_even_game():
+    run_game(brain_even, EVEN_INSTUCTION)
