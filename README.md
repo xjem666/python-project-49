@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 ## Hexlet tests and linter status:
-[![Actions Status](https://github.com/xjem666/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/xjem666/python-project-49/actions)
+![GitHub Actions Workflow](https://github.com/xjem666/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2fb8d532f2b79ff8418a/maintainability)](https://codeclimate.com/github/xjem666/python-project-49/maintainability)
 
 
@@ -46,7 +46,7 @@
     brain-calc
 [![asiicast](https://asciinema.org/a/i1C1ajWI78Vb2FW8TyR8zrAMW.svg)](https://asciinema.org/a/i1C1ajWI78Vb2FW8TyR8zrAMW.svg)
 
-    brain-nod
+    brain-gcd
 [![asiicast](https://asciinema.org/a/i346rO88Lq8wHNWXx3vwUnpNw.svg)](https://asciinema.org/a/i346rO88Lq8wHNWXx3vwUnpNw)
 
     brain-progression

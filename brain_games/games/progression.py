@@ -13,8 +13,7 @@ def brain_progression():
                    for i in range(PROGRESSION_LENGTH)
                    ])
     result = str(first_num + missed_num_ind * diff)
-    question = pg
-    return question, result
+    return pg, result
 
 
 def run_brain_progression():
