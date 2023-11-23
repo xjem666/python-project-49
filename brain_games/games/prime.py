@@ -18,5 +18,5 @@ def brain_prime():
     return problem_num, answer
 
 
-def run_brain_prime():
+def run_prime():
     run_game(brain_prime, PM_INSTRUCTION)

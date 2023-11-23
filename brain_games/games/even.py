@@ -13,5 +13,5 @@ def brain_even():
     return problem_num, answer
 
 
-def run_brain_even_game():
+def run_even_game():
     run_game(brain_even, EVEN_INSTUCTION)
