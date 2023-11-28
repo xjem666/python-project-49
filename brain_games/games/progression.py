@@ -20,5 +20,5 @@ def get_progression_and_missed_num():
     return question, result
 
 
-def run_progression():
+def run_progression_game():
     run_game(get_progression_and_missed_num, PROGRESSION_INSTRUCTION)

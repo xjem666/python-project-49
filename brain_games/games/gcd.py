@@ -16,5 +16,5 @@ def brain_gcd():
     return question, result
 
 
-def run_gcd():
+def run_gcd_game():
     run_game(brain_gcd, NOD_INSTRUCTION)
