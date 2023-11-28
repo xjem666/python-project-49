@@ -9,7 +9,7 @@ def get_nod(num1, num2):
     return math.gcd(num1, num2)
 
 
-def brain_gcd():
+def get_problem_num():
     num1, num2 = get_random_number(), get_random_number()
     question = f'{num1} {num2}'
     result = str(get_nod(num1, num2))
@@ -17,4 +17,4 @@ def brain_gcd():
 
 
 def run_gcd_game():
-    run_game(brain_gcd, NOD_INSTRUCTION)
+    run_game(get_problem_num, NOD_INSTRUCTION)
