@@ -9,7 +9,7 @@ def get_math_expression_and_result():
     math_operators = random.choice(MATH_OPERATORS)
     expression = f"{num1} {math_operators} {num2}"
     result = eval(expression)
-    return ..., str(result)
+    return expression, str(result)
 
 
 def run_calc_game():
