@@ -7,11 +7,11 @@ def is_even(num):
     return num % 2 == 0
 
 
-def get_problem_num_and_even_num():
+def brain_even():
     problem_num = get_random_number()
     answer = 'yes' if is_even(problem_num) else 'no'
     return problem_num, answer
 
 
 def run_even_game():
-    run_game(get_problem_num_and_even_num, EVEN_INSTUCTION)
+    run_game(brain_even, EVEN_INSTUCTION)
